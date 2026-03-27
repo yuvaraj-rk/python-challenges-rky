@@ -6,8 +6,8 @@ This documentation focuses on the critical relationship between **Data Access Pa
 When processing large datasets, the choice between a **List** and a **Set** for membership testing (`if item in collection`) determines whether an algorithm scales or fails.
 
 ### 1. The Membership Bottleneck
-* **Lists ($O(n)$):** Every lookup requires a linear scan. Searching a list of 1 million items can take 1 million steps.
-* **Sets ($O(1)$):** Every lookup is nearly instantaneous. Python uses a **Hash Table** to jump directly to the item, regardless of the collection's size.
+* **Lists O(n):** Every lookup requires a linear scan. Searching a list of 1 million items can take 1 million steps.
+* **Sets O(1):** Every lookup is nearly instantaneous. Python uses a **Hash Table** to jump directly to the item, regardless of the collection's size.
 
 ### 2. The Hybrid Strategy
 To process duplicate data (where frequency matters) without sacrificing speed:
