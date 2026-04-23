@@ -29,3 +29,4 @@ class MyHTMLParser(HTMLParser):
 
 parser = MyHTMLParser()
 parser.feed(html)
+parser.close()
